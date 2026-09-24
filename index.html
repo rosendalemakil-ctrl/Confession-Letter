@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter For You 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Step 1: Intro / Envelope -->
+    <div class="step active" id="step1">
+      <h1>Hello, Honey</h1>
+      <p>I like to tell you something special...</p>
+      
+      <div class="envelope-box">
+        <div class="envelope-icon">💌</div>
+      </div>
+      <button class="next-btn" onclick="nextStep(2)">Open</button>
+    </div>
+
+    <!-- Step 2: Letter Page 1 -->
+    <div class="step" id="step2">
+      <div class="letter-paper">
+        <p>This is very shocking to say and I'm gonna be honest with you,</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(3)">Next ➡️</button>
+    </div>
+
+    <!-- Step 3: Letter Page 2 -->
+    <div class="step" id="step3">
+      <div class="letter-paper">
+        <p>I've been thinking of this for so long but I am freakin scared for the first time cuz this is my first thing to act like this.</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(4)">Next ➡️</button>
+    </div>
+
+    <!-- Step 4: Letter Page 3 -->
+    <div class="step" id="step4">
+      <div class="letter-paper">
+        <p>I like you.. for 2 months. Shocking isn't? Do you remember I said before? That I'm interested with someone?</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(5)">Next ➡️</button>
+    </div>
+
+    <!-- Step 5: Letter Page 4 -->
+    <div class="step" id="step4">
+      <div class="letter-paper">
+        <p>It's you...</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(6)">Next ➡️</button>
+    </div>
+
+    <!-- Step 6: Letter Page 5 -->
+    <div class="step" id="step5">
+      <div class="letter-paper">
+        <p>Sorry for not telling this cuz I don't wanna ruin our friendship and I know that you have a lot of things that messing up your mind. And I don't wanna be a part of it but... I think I already did?</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(6)">Next ➡️</button>
+    </div>
+
+    <!-- Step 7: Letter Page 6 -->
+    <div class="step" id="step6">
+      <div class="letter-paper">
+        <p>The funny thing is, I asked some players in hangout if I should confess. I also asked my friend, Michelle. T-T</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(7)">Next ➡️</button>
+    </div>
+
+    <!-- Step 8: Letter Page 7 -->
+    <div class="step" id="step7">
+      <div class="letter-paper">
+        <p>I won't know unless I try to tell it to you, right?</p>
+      </div>
+      <button class="next-btn" onclick="nextStep(8)">Next ➡️</button>
+    </div>
+
+    <!-- Step 9: Final Confession Question -->
+    <div class="step" id="step8">
+      <div class="letter-paper">
+        <p>Will you accept this message?</p>
+        <p class="signature">- Rose</p>
+      </div>
+      <div class="btn-container">
+        <button class="btn-accept" onclick="acceptConfession()">Yes! 💖</button>
+        <button class="btn-reject" onclick="rejectConfession()">No.. 💔</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
